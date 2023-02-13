@@ -1,0 +1,15 @@
+#site-name a{
+	color: white !important;
+}
+#user-tools, #user-tools a, #user-tools strong{
+	color: white !important;
+}
+#header{
+	background: black;
+}
+.breadcrumbs{
+	background: #202020 !important;
+}
+.module caption{
+	background: black;
+}

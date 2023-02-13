@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>SAINT OFF PRICE.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="msapplication-TileColor" content="#171717">
+	<meta name="msapplication-TileImage" content="/favicons/favicon-144.png">
+	<link rel="icon" href="/favicons/favicon-32.png" sizes="32x32">
+	<link rel="icon" href="/favicons/favicon-128.png" sizes="128x128">
+	<link rel="icon" href="/favicons/favicon-144.png" sizes="144x144">
+	<link rel="icon" href="/favicons/favicon-152.png" sizes="152x152">
+	<link rel="icon" href="/favicons/favicon-196.png" sizes="196x196">
+	<link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
+	<link rel="stylesheet" href={% static "css/normalize.css" %}>
+	<link rel="stylesheet" href={% static "css/shop/index.css" %}>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.4/dist/tailwind.min.css">
+
+</head>
+
+<body>
+
+	<canvas id="canvas"></canvas>
+
+
+	<div class="swiper mySwiper">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide">
+				<button class="absolute burger"><span class="material-symbols-rounded">
+						menu
+					</span>
+				</button>
+				<div class="hero-container">
+					<div class="environment"></div>
+					<a href="">
+						<h2 class="hero glitch layers" data-text="SAINT OFF PRICE"><span>SAINT OFF PRICE.</span></h2>
+					</a>
+				</div>
+
+
+				<video id="bg_video" src={% static "videos/bg.mkv" %} muted autoplay loop></video>
+
+			</div>
+			<div class="swiper-slide">
+				Slide 1
+			</div>
+			<div class="swiper-slide grid grid-cols-2">
+				<div class="--3-section-text">
+					<p>
+						SAINT OFF PRICE.
+					</p>
+					<p>
+						WE ARE WILD F***ING DISGN STORE
+					</p>
+					<p>
+						FOR WORLD WIDE FASHION
+					</p>
+				</div>
+				<div class="--3-section-video">
+					<video class="" src={% static "videos/3video.mp4" %} muted autoplay loop></video>
+					<video class="" src={% static "videos/3video.mp4" %} muted autoplay loop></video>
+					<img src={% static "img/14.jpg" %} alt="" srcset="">
+					<p>
+						DISIGH BOCTOK 18 ///
+						<p>
+							DISIGH BOCTOK 18 ///
+							PHOTO BY LADA GLIK
+						</p>
+						<p class="">
+							SOP ®
+						</p>
+					</p>
+
+
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				Slide 3
+			</div>
+
+			<div class="swiper-slide">
+				Slide 4
+			</div>
+
+			<div class="swiper-slide">
+				Slide 5
+			</div>
+
+			<div class="swiper-slide">
+				Slide 6
+			</div>
+
+			<div class="swiper-slide">
+				Slide 7
+			</div>
+
+			<div class="swiper-slide">
+				Slide 8
+			</div>
+
+			<div class="swiper-slide">
+				Slide 9
+			</div>
+
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+
+
+
+
+
+		<div id="menu-btn"></div>
+		<div id="view-modes"></div>
+		<div id="main">
+			<div id="all"></div>
+			<div id="nodes">
+				<div id="nodes-container"></div><svg width="9" height="5" id="nodes-arrow" data-name="nodes-arrow"
+					xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.02 5.04">
+					<polygon points="4.51 5.04 0 0.53 0.53 0 4.51 3.98 8.48 0 9.02 0.53 4.51 5.04" style="fill:#fff" />
+				</svg>
+			</div>
+			<div class="overlay is-top"></div>
+
+			<div class="overlay is-bottom"></div>
+			<div id="story">
+
+				<div id="story-pole">
+
+					<div id="story-pole-line">
+
+					</div>
+					<div id="story-pole-node">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sound-btn" class="cache" style="opacity: 1;"><canvas width="30"
+				height="30"></canvas>
+		</div>
+		
+		<div id="preloader-text" class="cache">
+			<div id="preloader-text-title">SAINT OFF PRICE.</div>
+			<div id="preloader-text-author">мультибрендовый бутик</div>
+			<a id="preloader-text-enter" class="btn btn-1">открыть дверь</a>
+		</div>
+		<!-- {% comment %}{% for img in data %}
+		<img src={{ img.item_img.url }}>
+		{% endfor %}{% endcomment %} -->
+
+</body>
+<script src={% static 'js/three.min.js' %}></script>
+<script src={% static 'js/shop/index.js' %}></script>
+<script src={% static 'js/shop/app.js' %}></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script type='text/javascript' src='https://count.carrierzone.com/app/count_server/count.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src={% static 'js/shop/swiper.js' %}></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+<script src={% static 'node_modules/livereload-js/src/livereload.js' %}></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<script src="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.4/src/util/createPlugin.min.js"></script>
+<script>
+	console.log($('body').hasClass('end'))
+	if ($('body').hasClass('end')) {
+		if ($(".bg_video").paused) {
+			$(".bg_video").play()
+		}
+	}
+</script>
+
+</html>

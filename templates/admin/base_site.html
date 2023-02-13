@@ -1,0 +1,16 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+{% csrf_token %}
+{% block extrastyle %}
+	<link rel="stylesheet" href={% static 'css/admin/admin.css' %}>
+{% endblock extrastyle %}
+
+{% block title %}
+	{{ site_title }}
+{% endblock title %}
+
+{% block branding %}
+	<h1 id='site-name'><a href={% url 'admin:index' %}>{{ site_header }}</a></h1>
+{% endblock branding %}
+
+{% block nav-global %}{% endblock nav-global %}
